@@ -1,0 +1,38 @@
+
+# Lista 16 – Uma Introdução à Orientação a Objetos
+
+## Enunciado
+
+Criar a versão OO das questões com estruturas.
+
+Considere uma classe para descrever triângulos.
+
+### Abstração de Dados
+Os três lados de um triângulo:
+
+- A: real
+- B: real
+- C: real
+
+### Abstração de Operações
+
+- Três métodos para atribuir o valor de cada um dos lados.
+- Um método para atribuir os três lados.
+- Três métodos para retornar o valor de cada um dos três lados.
+- Um método para gerar o perímetro de um triângulo.
+- Um método para verificar se trata-se de um triângulo válido ou não.
+- Um método que verifique se um triângulo é equilátero ou não.
+- Um método que verifique se um triângulo é isósceles ou não.
+- Um método que verifique se um triângulo é escaleno ou não.
+
+### Teste da Classe
+
+Teste a sua classe a partir da função principal. Nela, construa um vetor com três triângulos.
+
+Permita ao usuário cadastrar os três triângulos. Rejeitar a leitura caso os valores fornecidos não atendam aos requisitos para triângulos válidos.
+
+Em seguida, listar:
+
+**a)** Todos os triângulos cadastrados, escrevendo o valor de cada um de seus lados e o perímetro do triângulo.
+
+**b)** Todos os triângulos equiláteros.
