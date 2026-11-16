@@ -33,6 +33,5 @@ Permita ao usuário cadastrar os três triângulos. Rejeitar a leitura caso os v
 
 Em seguida, listar:
 
-**a)** Todos os triângulos cadastrados, escrevendo o valor de cada um de seus lados e o perímetro do triângulo.
-
-**b)** Todos os triângulos equiláteros.
+a) Todos os triângulos cadastrados, escrevendo o valor de cada um de seus lados e o perímetro do triângulo.
+b) Todos os triângulos equiláteros.
