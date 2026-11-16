@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 
 class Triangulo {
@@ -66,56 +67,92 @@ class Triangulo {
     // GETS
 
     float getLadoA() {
-        return ladoA;
+        float valor = ladoA;
+
+        return valor;
     }
 
     float getLadoB() {
-        return ladoB;
+        float valor = ladoB;
+
+        return valor;
     }
 
     float getLadoC() {
-        return ladoC;
+        float valor = ladoC;
+
+        return valor;
     }
 
     // PERIMETRO
 
     float getPerimetro() {
-        return ladoA + ladoB + ladoC;
+        float perimetro = ladoA + ladoB + ladoC;
+
+        return perimetro;
     }
 
     // VALIDACAO
 
     bool ehValido() {
-        return ladoA > 0 && ladoB > 0 && ladoC > 0 &&
-               ladoA + ladoB > ladoC &&
-               ladoA + ladoC > ladoB &&
-               ladoB + ladoC > ladoA;
+        bool valido = false;
+
+        if (ladoA > 0 && ladoB > 0 && ladoC > 0 &&
+            ladoA + ladoB > ladoC &&
+            ladoA + ladoC > ladoB &&
+            ladoB + ladoC > ladoA) {
+
+            valido = true;
+        }
+
+        return valido;
     }
 
     // EQUILATERO
 
     bool ehEquilatero() {
-        return ehValido() &&
-               ladoA == ladoB &&
-               ladoB == ladoC;
+        bool equilatero = false;
+
+        if (ehValido() &&
+            ladoA == ladoB &&
+            ladoB == ladoC) {
+
+            equilatero = true;
+        }
+
+        return equilatero;
     }
 
     // ISOSCELES
 
     bool ehIsosceles() {
-        return ehValido() &&
-               (ladoA == ladoB ||
-                ladoA == ladoC ||
-                ladoB == ladoC);
+        bool isosceles = false;
+
+        if (ehValido() &&
+            (ladoA == ladoB ||
+             ladoA == ladoC ||
+             ladoB == ladoC)) {
+
+            isosceles = true;
+        }
+
+        return isosceles;
     }
 
     // ESCALENO
 
     bool ehEscaleno() {
-        return ehValido() &&
-               ladoA != ladoB &&
-               ladoA != ladoC &&
-               ladoB != ladoC;
+        bool escaleno = false;
+
+        if (ehValido() &&
+            ladoA != ladoB &&
+            ladoA != ladoC &&
+            ladoB != ladoC) {
+
+            escaleno = true;
+        }
+
+        return escaleno;
     }
 
 };
