@@ -1,19 +1,22 @@
 int main() {
 
-    Candidato* Canditados[_MAX];
+    Candidato* candidatos[_MAX];
 
     int qtdCandidatos = lerQtdCandidatos();
 
     for (int i = 0; i < qtdCandidatos; i++) {
-        Canditados[i] = lerCandidato();
+        candidatos[i] = lerCandidato();
     }
 
-    double media = mediaNota(Canditados, qtdCandidatos);
+    int comando;
+    cin >> comando;
 
-    listarCandidatos(Canditados, qtdCandidatos, media);
+    double media = mediaNota(candidatos, qtdCandidatos);
+
+    listarCandidatos(candidatos, qtdCandidatos, media);
 
     for (int i = 0; i < qtdCandidatos; i++) {
-        delete Canditados[i];
+        delete candidatos[i];
     }
 
     return 0;
