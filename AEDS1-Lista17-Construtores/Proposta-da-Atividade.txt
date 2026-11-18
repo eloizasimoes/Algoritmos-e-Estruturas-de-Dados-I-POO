@@ -1,0 +1,62 @@
+Gerenciamento de Candidatos
+
+Objetivo
+
+Praticar a manipulação de vetores de ponteiros para objetos em C++.
+
+Enunciado
+
+Desenvolver um programa em C++ que gerencie um conjunto de candidatos. O programa deverá ler o número de candidatos, os dados de cada candidato (nome e nota), calcular a média das notas e listar os candidatos que obtiveram nota acima da média.
+
+Especificações
+
+Definição da classe Candidato
+
+Criar uma classe chamada "Candidato" com os seguintes atributos privados:
+
+- "string nome": nome do candidato.
+- "double nota": nota do candidato.
+
+A classe deve possuir:
+
+- Um construtor que inicialize os atributos com os parâmetros fornecidos.
+- Métodos "setNome" e "setNota".
+- Métodos "getNome" e "getNota".
+
+Definição de constante
+
+Definir uma constante "_MAX" que represente o número máximo de candidatos permitidos (por exemplo, 100).
+
+Função principal
+
+Na função "main", executar as seguintes etapas:
+
+1. Declarar um vetor de ponteiros para objetos do tipo "Candidato", com tamanho "_MAX".
+2. Ler o número de candidatos, respeitando o limite "_MAX".
+3. Ler o nome e a nota de cada candidato e criar um objeto "Candidato", armazenando seu ponteiro no vetor.
+4. Calcular a média das notas.
+5. Listar os candidatos que obtiveram nota acima da média.
+
+Preferencialmente, utilizar funções específicas para leitura, cálculo da média e listagem.
+
+Entrada
+
+- Número N de candidatos.
+- Nome e nota de cada um dos N candidatos.
+
+Saída
+
+Linhas contendo o nome e a nota de cada candidato com nota acima da média.
+
+Exemplo
+
+Entrada:
+
+3
+João 10
+Maria 20
+José 3
+
+Saída:
+
+Maria 20
